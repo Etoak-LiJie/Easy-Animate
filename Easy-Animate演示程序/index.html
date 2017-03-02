@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!--
+        	作者：admin@w3c.top
+        	时间：2017-03-01
+        	描述：引入CSS文件
+        -->
+		<link rel="stylesheet" type="text/css" href="lib/easy-animate/easy-animate.min.css"/>
+		<!--
+        	作者：admin@w3c.top
+        	时间：2017-03-01
+        	描述：引入jQuery文件
+        -->
+		<script src="lib/easy-animate/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--
+        	作者：admin@w3c.top
+        	时间：2017-03-01
+        	描述：引入Easy-Animate.js文件
+        -->
+        <script src="lib/easy-animate/easy-animate.min.js" type="text/javascript" charset="utf-8"></script>
+        <!--
+        	作者：admin@w3c.top
+        	时间：2017-03-01
+        	描述：样式文件
+        -->
+        <style>
+        	.box{
+        		width: 200px;
+        		height: 200px;
+        		background: aqua;
+        		float: left;
+        		margin-left: 10px;
+        	}
+        	body{
+        		padding: 100px;
+        	}
+        	.easy-animate-a{
+        		display: inline-block;
+        		width: 100%;
+        		margin-top: 20px;
+				text-align: center;        		
+        	}
+        </style>
+	</head>
+	<body>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<a class='easy-animate-a' href="http://w3c.link">点击进入Easy-Animate官网查看API文档</a>
+		
+		<!--
+        	作者：admin@w3c.top
+        	时间：2017-03-01
+        	描述：调用Easy-Animate API实现特效-特效调用示例
+        -->
+		<script type="text/javascript">
+			$(function(){
+				// 为选中元素添加摆动效果
+				//$(".box").swing();
+				// 为选中元素添加晃动特效
+				//$(".box").wobble();
+				// 轻轻弹起并落下
+				//$(".box").flip();
+				// 旋转360度淡入
+				//$(".box").rotateIn();
+				// 以左下角为圆心逆时针旋转90度淡入
+				//$(".box").rotateInUpLeft();
+				//从左侧顺时针旋转90度淡入
+				$(".box").rollIn();
+				// 其它所有特效同理,进入官网查看所有API,一行代码即可实现复杂特效!!!!
+			});
+		</script>
+	</body>
+</html>
